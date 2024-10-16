@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sixtyfour Convergence", system-ui;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: rgba(255, 192, 203, 0.108);
+}
+
+.logo{
+    width: 140px;
+    background-color: rgba(255, 192, 203, 0.26);
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.link:hover{
+    color: rgb(227, 62, 11);
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0% 0% 8%;
+}
+#username{
+    font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+#lname{
+    font-family: "Great Vibes", cursive;
+    color: rgb(255, 0, 187);
+}
+#user-details{
+    line-height: 1.8;
+}
+#download{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+}
+ /* #home{
+     display: flex; 
+    background-color: rgba(255, 192, 203, 0.208);
+}   */
+.home-image{
+    position: absolute;
+    width: 40%;
+    height: 75%;
+    right: 40px;
+    bottom: 0px;
+}
+.group1{
+    position:absolute;
+    height: 100%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: bottom 2s, left 1s;
+
+}
+
+.home-image:hover #shape{
+    bottom: 90px;
+}
+.home-image:hover #girl{
+    left: 90px;
+}
+#about{
+    margin: 20% 0% 0% 13%;
+}
+.sectionhead{
+    text-align: center;
+}
+#mainhead{
+    font-size: 30px;
+}
+#subhead{
+    color: rgb(230, 14, 173);
+    font-size: 20px;
+}
+.img1{
+    width: 80%;
+}
+.aboutbody{
+    display: grid;
+      grid-template-columns: repeat(2,1fr); 
+      gap: 50px;
+      align-items: center;
+      margin-top: 20px;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20px;
+
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 13% 8% 0% 12%;
+}
+.skillcontent{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50px;
+margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barhead, .barpercent{
+    font-size: 20px;
+    font-weight: 600px;
+}
+.basebar{
+    width: 100%;
+    height: 0.9rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 84%;
+}
+.cssbar{
+    background-color: orange;
+    width: 79%;
+}
+.jsbar{
+    background-color: orange;
+    width: 70%;
+}
+.reactbar{
+    background-color: orange;
+    width: 85%;
+}
+#contacts{
+    margin: 13% 8% 0% 12%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    border-radius: 50%;
+}
+    
+
+.brand{
+    color: black;
+    font-size: 25px;
+}
+.icon:hover{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.493) ,rgba(255, 255, 0, 0.438), rgba(0, 170, 255, 0.395));
+
+}
+.icon:hover .brand{
+    color: rgb(227, 12, 12);
+    animation:rotate 4s;
+}
+    @keyframes rotate {
+        0%{
+            transform:rotate(30deg);
+        }
+        20%{
+            transform:rotate(-30deg);
+        }
+        40%{
+            transform:rotate(30deg);
+        }
+        60%{
+            transform:rotate(-30deg);
+        }
+        80%{
+            transform:rotate(30deg);
+        }
+        100%{
+            transform:rotate(-30deg);
+        }
+    
+ }
+footer{
+    margin-top: 8%;
+}
+
+ #copyright{
+    text-align: center;
+    font-weight: 600;
+ }
+ .uparrow{
+    float: right;
+    margin-top: -40px;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: rgba(255, 192, 203, 0.241);
+ }
